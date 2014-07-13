@@ -15,3 +15,5 @@ module.exports = ->
           user: 'memcache'
           listen: '127.0.0.1'
           maxconn: 1024
+
+  @then @service, 'memcached', action: 'restart'
